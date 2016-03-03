@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160303012221) do
+ActiveRecord::Schema.define(version: 20160303035101) do
 
   create_table "books", force: :cascade do |t|
     t.string   "isbn",          null: false
@@ -20,9 +20,9 @@ ActiveRecord::Schema.define(version: 20160303012221) do
     t.string   "genre",         null: false
     t.string   "shelving_code", null: false
     t.string   "publisher"
-    t.string   "language"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.string   "language"
   end
 
   create_table "shelves", force: :cascade do |t|
